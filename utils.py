@@ -5,7 +5,7 @@ import re
 
 def authenticate_google_sheets():
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name("SVM_19_JULY_0.963/credentials-SC.json", scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name("model_files/credentials-SC.json", scope)
     client = gspread.authorize(creds)
     return client
 

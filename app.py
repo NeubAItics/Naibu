@@ -46,11 +46,11 @@ def preprocess_image(image):
     return hist_values + color_moments
 
 def load_model_and_predict(X):
-    with open('SVM_19_JULY_0.963/SVM_model_19-7.pkl', 'rb') as f:
+    with open('model_files/SVM_model_19-7.pkl', 'rb') as f:
         best_svm_model = pickle.load(f)
-    with open('SVM_19_JULY_0.963/label_encoder_SVM_19_7.pkl', 'rb') as f:
+    with open('model_files/label_encoder_SVM_19_7.pkl', 'rb') as f:
         label_encoder = pickle.load(f)
-    with open('SVM_19_JULY_0.963/svd_transformer_SVM_19_7.pkl', 'rb') as f:
+    with open('model_files/svd_transformer_SVM_19_7.pkl', 'rb') as f:
         svd = pickle.load(f)
 
     X_sparse = csr_matrix(X)
