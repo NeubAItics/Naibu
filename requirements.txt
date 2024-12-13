@@ -1,0 +1,13 @@
+streamlit
+opencv-python==4.9.0.80
+opencv-python-headless==4.10.0.84
+numpy
+matplotlib
+Pillow
+scipy
+pandas
+google-auth==2.29.0
+gspread==6.1.2
+streamlit-cropper
+scikit-learn
+oauth2client==4.1.3
