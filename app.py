@@ -8,7 +8,7 @@ from streamlit_cropper import st_cropper
 from PIL import Image
 from scipy.sparse import csr_matrix
 import pandas as pd
-import google_sheets_utils as gs
+import utils as gs
 import gspread  
 import re
 
